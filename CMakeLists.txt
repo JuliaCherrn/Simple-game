@@ -17,3 +17,17 @@ add_executable("${PROJECT_NAME}" main.cpp
                                  Game.h
 				 calibri.ttf
 )
+target_link_libraries("${PROJECT_NAME}" 
+					    debug sfml-graphics-s-d 
+						debug sfml-window-s-d
+						debug sfml-system-s-d
+						debug sfml-audio-s-d)
+						
+target_link_libraries("${PROJECT_NAME}" 
+					    optimized sfml-graphics-s 
+						optimized sfml-window-s
+						optimized sfml-system-s
+						optimized sfml-audio-s)
+	
+target_link_libraries("${PROJECT_NAME}" opengl32 freetype winmm gdi32 openal32 flac vorbisenc vorbisfile vorbis ogg)
+										
