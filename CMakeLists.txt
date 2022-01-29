@@ -15,4 +15,5 @@ include_directories("inc/")
 add_executable("${PROJECT_NAME}" main.cpp
                                  Game.cpp
                                  Game.h
+				 calibri.ttf
 )
